@@ -9,7 +9,14 @@ module.exports = {
     // 'plugin:storybook/recommended',
     'prettier',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs', 'node_modules/', /webpack\.*/],
+  ignorePatterns: [
+    'dist',
+    '.eslintrc.cjs',
+    'node_modules/',
+    'webpack.common.js',
+    'webpack.dev.js',
+    'webpack.prod.js',
+  ],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],
   settings: {
